@@ -1,0 +1,3 @@
+[merge "fastforward"]
+    name = fastforward merge driver
+    driver = ~/tools/fastforward-merge-driver.sh %A %O %B %P

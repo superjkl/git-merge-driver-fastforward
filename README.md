@@ -4,3 +4,5 @@ A custom merge driver which will only do fast-forward merges for each file. A fi
 How it works
 ------------
 If there have been any changes in the currently merging file from the ancestor commit to HEAD the merge will fail. Upon failing the diff for the file from the ancestor commit to HEAD will be printed. 
+
+This is a hacky way of using merge drivers to essentially accomplish a custom merge strategy. The intended usage of merge drivers is custom merging behavior for specific file types. This would include merging that is aware of the file's structure and grammar. This custom merge driver essentially acts like the `octopus` merge strategy while still giving the user the option to resolve conflicts manually.
